@@ -11,7 +11,7 @@ db.authenticate()
     .catch( error => console.log(error))
 
 //Definir puerto
-const port = process.env.PORT || 4000
+const port = process.env.MYSQLPORT || 4000
 
 //habilitar pug
 app.set('view engine', 'pug')
