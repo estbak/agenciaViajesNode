@@ -5,7 +5,7 @@ console.log(process.env.DB_HOST)
 
 const db = new Sequelize(process.env.MYSQLDATABASE, process.env.MYSQLUSER, process.env.MYSQLPASSWORD, {
     host: process.env.MYSQLHOST,
-    port: MYSQLPORT,
+    port: process.env.MYSQLPORT,
     dialect: 'mysql',
     define: {
         timestamps: false
